@@ -1,0 +1,82 @@
+{
+	"extends": [
+		"airbnb-typescript-prettier"
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"plugins": [
+		"prettier"
+	],
+	"parser": "@typescript-eslint/parser",
+	"rules": {
+		"prettier/prettier": [
+			"off",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [
+				".js",
+					".jsx",
+					"ts",
+					"tsx"
+				]
+			}
+		],
+		"react/prop-types": 0,
+		"react/jsx-props-no-spreading": "off",
+		"import/prefer-default-export": "off",
+		"react/require-default-props": "off",
+		"no-use-before-define": "off",
+		"camelcase": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"react-hooks/exhaustive-deps": "off",
+		"@typescript-eslint/ban-types": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"no-nested-ternary": "off",
+		"jsx-a11y/no-autofocus": "off",
+		"no-underscore-dangle": "off",
+		"no-unused-vars": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"mjs": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		]
+	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [
+					".js",
+					".jsx",
+					".ts",
+					".tsx"
+				]
+			}
+		}
+	},
+	"globals": {
+		"window": true,
+		"document": true,
+		"localStorage": true,
+		"FormData": true,
+		"FileReader": true,
+		"Blob": true,
+		"navigator": true,
+		"Headers": true,
+		"Request": true,
+		"fetch": true
+	}
+}
