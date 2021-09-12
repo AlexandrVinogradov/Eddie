@@ -1,33 +1,31 @@
-import React, { ReactChild, SVGProps } from 'react';
-import { css } from '@emotion/react';
-import classNames from 'classnames';
+import React, { ReactChild, SVGProps } from 'react'
+import { css } from '@emotion/react'
+import classNames from 'classnames'
 
 interface Props extends SVGProps<SVGSVGElement> {
-  size?: number;
-  color?: string;
+	size?: number
+	color?: string
 }
 
 export function Icon(props: Props): JSX.Element {
-  const { children, className, size, viewBox, color, ...otherProps } = props;
+	const { children, className, size, viewBox, color, ...otherProps } = props
 
-  console.log(size);
-
-  return (
-    <svg
-      {...otherProps}
-      fill={color}
-      className={classNames('inline-block', className)}
-      css={css`
-        width: ${size}px;
-      `}
-      viewBox={viewBox}
-    >
-      {children}
-    </svg>
-  );
+	return (
+		<svg
+			{...otherProps}
+			fill={color}
+			className={classNames('inline-block', className)}
+			css={css`
+				width: ${size}px;
+			`}
+			viewBox={viewBox}
+		>
+			{children}
+		</svg>
+	)
 }
 
 Icon.defaultProps = {
-  size: 24,
-  color: 'currentColor',
-};
+	size: 24,
+	color: 'currentColor',
+}

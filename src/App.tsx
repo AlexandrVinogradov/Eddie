@@ -33,7 +33,11 @@ function App() {
 	// 	"updated_at": "2021-08-30T10:19:26.305Z"
 	//   }
 
-	const { user, isAuthenticated } = useAuth0()
+	const { user, isAuthenticated, getAccessTokenSilently, getAccessTokenWithPopup, getIdTokenClaims } = useAuth0()
+	console.log(user)
+	// console.log(getAccessTokenSilently)
+	// console.log(getAccessTokenWithPopup)
+	// console.log(getIdTokenClaims)
 
 	return (
 		<div>
