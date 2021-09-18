@@ -1,4 +1,5 @@
 {
   "domain": "dev-zuegt90n.us.auth0.com",
-  "clientId": "PDTatsM23rJSnMKRHzr7TQzIYqqE8SfK"
+  "clientId": "PDTatsM23rJSnMKRHzr7TQzIYqqE8SfK",
+  "audience": "https://dev-zuegt90n.us.auth0.com/api/v2/"
 }
